@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.box{
+    width: 100%;
+}
+
+.table{
+    width: 100%;
+}
+
+
+.multiselect {
+    position: relative;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0);
+}
+
+.overSelect:hover {
+    border-color: #b5b5b5;
+}
+
+#checkboxes {
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    display: none;
+    border: 1px solid rgba(0,0,0,0.5);
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+#checkboxes::-webkit-scrollbar {
+    z-index: 2;
+    display: initial;
+}
+
+#checkboxes label {
+    display: block;
+    padding: 3px 12px;
+}
+
+#checkboxes label:hover {
+    background-color: rgb(30,144,255);
+    color: #fff;
+}
+
+#output {
+    display: none;
+}

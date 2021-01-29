@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #363636;
+    margin: 0;
+    padding: 0;
+}
+
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent ,rgba(212, 71, 71, 0.8));
+}
+
+#overview {
+    z-index: 0;
+    height: 500px;
+}
+
+#overview #carousel {
+    position: absolute;
+    top: -15vh;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    min-width: 900px;
+    margin: 40px auto 0 auto;
+    height: 550px;
+    overflow: hidden;
+}
+
+#overview #carousel .item {
+    min-width: 900px;
+    height: 550px;
+}
+
+#overview #carousel .item img {
+    width: 100%;
+    height: 100%;
+}
+
+#app_car {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+  
+  #app_car #items_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #app_car #items_container .item {
+    text-align: center;
+    width: 300px;
+  }
+  
+  #app_car .item i {
+    color: #d44747;
+    font-size: 80px;
+    margin-bottom: 30px;
+  }
+  
+  #app_car .item h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: bold;
+  }
+  
+  #app_car .item p {
+    font-size: 16px;
+    display: block;
+    line-height: 2;
+    color: grey;
+    font-weight: 300;
+  }
+
+header{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+    z-index: 1;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-hero{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+}
+
+.main-hero h1{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    line-height: 1.3;
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.main-hero p{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 25px;
+}
+
+.images{
+    background-color: #7c2139;
+}
+
+.about-icon{
+    width: 256px;
+    height: auto;
+    margin: 80px 0;
+}
+
+.hero{
+    position: relative;
+    background : url(/public/img/landing2.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+footer{
+    background-color: #f3f7f8;
+    height: 160px;
+    padding: 0 30px;
+    border-top: 1px solid #c4c4c4;
+}
+
+footer img {
+    width: auto;
+    height: 120px;
+    display: block;
+}
+
+@media screen and (max-width: 1024px) {
+    #app_car #items_container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #app_car #items_container .item {
+        margin: 30px 0;
+    }
+}

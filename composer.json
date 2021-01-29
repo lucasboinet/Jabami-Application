@@ -1,0 +1,19 @@
+{
+    "require": {
+        "johngrogg/ics-parser": "^2.2",
+        "ext-pdo": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Model\\" : "model/",
+            "database\\" : "database/",
+            "enum\\" : "enum/",
+            "Controller\\" : "controller/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "7.4.0"
+        }
+    }
+}
